@@ -1,0 +1,34 @@
+.carousel__team {
+    background-image: url('../img/team.jpg');
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.style__background {
+    background: rgba(215, 213, 213, 0.8) !important;
+  
+  
+}
+
+.carousel__team{
+    position: relative;
+    text-align: center;
+
+}
+.style__background{
+    position: absolute;
+    bottom: -240px;
+    left: 200px;
+    border-radius: 20px;
+
+}
+.btn{
+    border-radius: 20px;
+    background-color: #e67e22;
+    text-align: center;
+    width: 200px;
+}

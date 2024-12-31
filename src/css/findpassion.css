@@ -1,0 +1,11 @@
+.item__find{
+    border: none;
+    transition: all 0.9s;
+
+}
+
+
+.item__title:hover .item__find{
+    border: 1px solid #e67e22;
+
+}

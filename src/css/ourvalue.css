@@ -1,0 +1,8 @@
+.card-body{
+    transition: all 0.8s;
+}
+
+.card-body i.card-text:hover{
+    color: red;
+
+}

@@ -1,0 +1,140 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #1F2A36; /* Nền xám đậm */
+    color: #ECF0F1; /* Màu chữ sáng */
+    font-family: Arial, sans-serif;
+  }
+  
+  .logo a {
+    color: #ECF0F1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    padding: 0.5rem;
+    background-color: #34495E; /* Màu nền tối cho thanh tìm kiếm */
+    color: #1F2A36; /* Màu chữ tối hơn cho thanh tìm kiếm */
+    border: none;
+    border-radius: 4px;
+    margin-right: 1.5rem; /* Khoảng cách giữa search bar và icon chuông */
+    width: 250px; /* Tùy chỉnh độ rộng của thanh tìm kiếm nếu cần */
+  }
+  
+  .search-bar::placeholder {
+    color: #BDC3C7; /* Màu placeholder sáng hơn */
+  }
+  
+  .notification-icon {
+    position: relative;
+    color: #ECF0F1;
+    font-size: 1.5rem;
+    margin-right: 1.5rem; /* Khoảng cách giữa icon chuông và user section */
+  }
+  
+  .notification-icon .notification-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  /* Menu thông báo */
+  .notification-menu {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .notification-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .notification-item {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative; /* Để căn chỉnh menu thả xuống */
+  }
+  
+  .username {
+    font-size: 1rem;
+    color: #ECF0F1;
+    cursor: pointer;
+  }
+  
+  /* Menu thả xuống */
+  .dropdown-menu {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%; /* Hiển thị menu ngay bên dưới avatar */
+    right: 0;
+    min-width: 150px;
+    max-height: 300px; /* Giới hạn chiều cao của menu */
+    overflow-y: auto;  /* Cho phép cuộn dọc nếu thông báo vượt quá chiều cao */
+    z-index: 10; /* Đảm bảo menu nằm trên các thành phần khác */
+    display: none; /* Ẩn menu ban đầu */
+  }
+  
+  .user-section:hover .dropdown-menu, .user-section:focus-within .dropdown-menu {
+    display: block; /* Hiển thị menu khi user-section được nhấn hoặc focus */
+  }
+  
+  /* Định dạng mục trong menu */
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Điều chỉnh kích thước icon trong menu */
+  .dropdown-item i {
+    margin-right: 0.5rem;
+  }
+  

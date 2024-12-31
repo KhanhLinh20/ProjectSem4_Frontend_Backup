@@ -1,0 +1,23 @@
+
+
+    .card {
+        width: 100%; /* Hiển thị 1 phần tử mỗi hàng */
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .slick-prev, .slick-next {
+        font-size: 24px; /* Điều chỉnh kích thước của các nút điều hướng */
+    }
+    .slick-next{
+        right: 30px;
+      
+    }
+    .slick-next:before, .slick-prev:before{
+        opacity: 0 !important;
+    }
+    .slick-prev{
+        right: 30px;
+    }

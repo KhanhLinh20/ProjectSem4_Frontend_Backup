@@ -1,0 +1,109 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sidebar-profile {
+    width: 100%;
+    background-color: #1F2A36; /* Màu xám đậm hơn */
+  }
+  
+  .sidebar-menu {
+    flex-grow: 1; /* Để sidebar-menu chiếm toàn bộ chiều cao còn lại */
+    overflow-y: auto; /* Chỉ cho thanh cuộn ở phần menu */
+    width: 100%;
+  }
+  
+  .sidebar-nav {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    transition: background-color 0.3s;
+    color: #ECF0F1;
+  }
+  .sidebar-item i {
+    margin-right: 0.5rem;
+  }
+
+    /* Loại bỏ dấu gạch chân dưới liên kết */
+    .sidebar-item, .sidebar-item:link, .sidebar-item:visited {
+        text-decoration: none;
+        color: #ECF0F1;
+    }
+  
+  .sidebar-item:hover {
+    background-color: #34495E;
+  }
+  
+  /* Căn chỉnh submenu và loại bỏ gạch chân */
+  .submenu {
+    display: none;
+    padding-left: 2.5rem; /* Căn chỉnh submenu ngang hàng với mục cha */
+  }
+  
+  .submenu.show {
+    display: block;
+  }
+  
+  .submenu li {
+    padding: 0.3rem 0;
+  }
+  
+  .submenu li a {
+    color: #ECF0F1;
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-size: 0.9rem;
+    display: block;
+    padding: 0.3rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .submenu li a:hover {
+    background-color: #34495E; /* Màu xám nhạt khi hover */
+  }
+  
+  .bi {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+  }
+  /* css sidebar  */
+  .active-link {
+    color: #e67e22;
+    text-decoration: none;
+  }
+  
+  .default-link {
+    color: rgb(199, 32, 32);
+    text-decoration: none;
+  }
+
+  .header__item li .active-link{
+    color: #e67e22;
+  }
+
+  
+  .custom-active-link {
+    color: #f9f8f8; /* Màu chữ khi active */
+    background-color: #1f2a36; /* Màu nền khi active */
+    padding: 5px 10px;
+   
+  }
+  

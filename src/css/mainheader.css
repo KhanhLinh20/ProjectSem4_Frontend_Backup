@@ -1,0 +1,13 @@
+/* CSS */
+.active-link {
+    color: #ee4d2d;
+    text-decoration: none;
+  }
+  
+  .default-link {
+    color: black;
+    text-decoration: none;
+  }
+  .header__item li .active-link{
+    color: #ee4d2d;
+  }

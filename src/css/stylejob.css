@@ -1,0 +1,53 @@
+.card{
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 0 0.2rem gray;
+    cursor: pointer;
+    transition: all 0.5s;
+   
+}
+.card .card-body{
+    border: 1px solid transparent;
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+    transition: all 0.5s;
+}
+.card .card-body h4 {
+font-size: 1.2rem;
+
+}
+.card:hover .card-body{ 
+   border-color: #35A22c;
+   border-top-color:transparent;
+}
+.card:hover .card-body h4{
+    color: #35A22c;
+}
+.card:hover .card-body p{
+    color: #35A22c;
+}
+
+/* .card {
+    position: relative;
+}
+.logo__new{
+    position: absolute;
+    top:0;
+    right: 0;
+} */
+
+img.logo__new{
+    width: 80px;
+}
+.job__item{
+    position: relative;
+}
+img.logo__new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+

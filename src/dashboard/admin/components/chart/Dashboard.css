@@ -1,0 +1,105 @@
+.dashboard {
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .info-cards {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .info-card {
+    flex: 1;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Căn giữa chữ và icon hai bên */
+    align-items: center;
+  }
+
+  .info-text {
+    text-align: left; /* Căn chữ về bên trái */
+  }
+
+  .info-icon {
+    font-size: 1.5rem; /* Giảm kích thước icon */
+  }
+  
+  .info-card h5 {
+    font-size: 0.85rem; /* Giảm kích thước font cho tiêu đề */
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-card h2 {
+    font-size: 1.75rem; /* Giảm kích thước font cho số chính */
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card p {
+    font-size: 0.85rem; /* Giảm kích thước font cho phần mô tả */
+    color: #6c757d;
+    margin: 0;
+  }
+
+  .text-success {
+    color: #28a745 !important;
+  }
+  
+  .text-danger {
+    color: #dc3545 !important;
+  }
+  
+  .chart-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .applicants {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .applicants h5 {
+    color: #2c3e50;
+  }
+  
+  .applicant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress-bar {
+    flex: 1;
+    height: 8px;
+    margin: 0 1rem;
+    border-radius: 5px;
+    appearance: none;
+  }
+  
+  .progress-bar::-webkit-progress-bar {
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+  
+  .progress-bar::-webkit-progress-value {
+    border-radius: 5px;
+  }
+  
+  .progress-bar.it-services::-webkit-progress-value { background-color: #4F81BD; }
+  .progress-bar.sales::-webkit-progress-value { background-color: #28a745; }
+  .progress-bar.design::-webkit-progress-value { background-color: #17a2b8; }
+  .progress-bar.hr::-webkit-progress-value { background-color: #dc3545; }
+  .progress-bar.system::-webkit-progress-value { background-color: #ffc107; }
+  
